@@ -53,7 +53,6 @@ public class LinkedQueue<E> implements Queue<E> {
         DLL.printList();
     }
 
-    @Override
     @SuppressWarnings("Duplicates")
     public void transfer(Queue<E> into) {
         if (into != null) {
@@ -69,7 +68,6 @@ public class LinkedQueue<E> implements Queue<E> {
         }
     }
 
-    @Override
     @SuppressWarnings("Duplicates")
     public void reverse() {
         LinkedStack<E> stack = new LinkedStack<>();
@@ -83,7 +81,6 @@ public class LinkedQueue<E> implements Queue<E> {
         }
     }
 
-    @Override
     public void merge(Queue<E> from) {
         if (from != null) {
             int sz = from.size();
